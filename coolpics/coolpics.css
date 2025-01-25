@@ -34,6 +34,9 @@ img {
 header a{
     color: white;
 }
+button {
+    all: unset; /* Resets all inherited and default styles */
+  }
 header a, button{
     display: grid;
     grid-auto-flow: column;
