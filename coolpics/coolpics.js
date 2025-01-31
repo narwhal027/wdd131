@@ -11,8 +11,8 @@ function viewHandler(event) {
     const clickedElement = event.target;
 
     if (clickedElement.tagName === "IMG") {
-        const imageSrcParts = clickedElement.src.split("-");
-        const fullSizeImage = clickedElement.src.replace(/(.*)(\.\w+)$/, "$1-full$2");
+        const imageSrc = clickedElement.src;
+        const fullSizeImage = imageSrc.replace(".png", "-full.png");
 
         document.body.insertAdjacentHTML("afterbegin", viewerTemplate(fullSizeImage, clickedElement.alt));
 
