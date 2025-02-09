@@ -1,0 +1,116 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #473144;
+    color: #EFC69B;
+  }
+
+  header {
+    background-color: #AF1B3F;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-family: 'Lora', Impact, serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #EFC69B;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+  }
+  
+  nav li {
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #EFC69B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+
+  #articles-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+
+  .meta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    font-size: 1.1rem;
+    color: #EFC69B;
+  }
+  
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .content h2 {
+    font-family: 'Lora', Impact, serif;
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .content img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #EFC69B;
+    border-radius: 5px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: #EFC69B;
+  }
+
+  .empty-column {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #EFC69B;
+    font-weight: bold;
+  }
