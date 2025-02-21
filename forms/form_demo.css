@@ -1,0 +1,82 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Center everything vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Center the form groups */
+  #checkoutForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Force the textarea to match the height of input fields */
+  textarea {
+    height: 40px;  /* Adjust this value as needed */
+    resize: none;
+  }
+  
+  /* Hide class to keep payment details hidden until selected */
+  .hide {
+    display: none;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Existing styles for select arrows and errors */
+  .errors > p {
+    border: 1px solid red;
+    padding: 0.5em;
+  }
+  select::-webkit-inner-spin-button,
+  select::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
